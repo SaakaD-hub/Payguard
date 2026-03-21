@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Alert</title>
+</head>
+<body>
+<h2 style="color: red;">⚠️ FRAUD ALERT</h2>
+<p>Dear Admin,</p>
+<p>A high-risk transaction has been detected and blocked.</p>
+
+<h3>Alert Details:</h3>
+<ul>
+    <li>Transaction ID: <strong th:text="${transactionId}"></strong></li>
+    <li>Fraud Score: <strong style="color: red;" th:text="${fraudScore}"></strong></li>
+    <li>Decision: <strong th:text="${decision}"></strong></li>
+    <li>Timestamp: <strong th:text="${timestamp}"></strong></li>
+</ul>
+
+<p>Please review this transaction immediately.</p>
+
+<hr>
+<p style="font-size: 12px; color: #666;">
+    This is an automated security alert from PayGuard Fraud Detection System.
+</p>
+</body>
+</html>

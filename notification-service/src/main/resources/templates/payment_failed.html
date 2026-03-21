@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Failed</title>
+</head>
+<body>
+<h2 style="color: red;">Payment Failed</h2>
+<p>Dear Merchant,</p>
+<p>Unfortunately, the payment could not be processed.</p>
+
+<h3>Transaction Details:</h3>
+<ul>
+    <li>Transaction ID: <strong th:text="${transactionId}"></strong></li>
+    <li>Amount: <strong th:text="${amount}"></strong></li>
+    <li>Reason: <strong th:text="${reason}"></strong></li>
+</ul>
+
+<p>Please contact support if you have questions.</p>
+
+<hr>
+<p style="font-size: 12px; color: #666;">
+    This is an automated notification from PayGuard Payment Processing Platform.
+</p>
+</body>
+</html>
