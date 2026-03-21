@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Completed</title>
+</head>
+<body>
+<h2>Payment Completed Successfully</h2>
+<p>Dear Merchant,</p>
+<p>Your payment has been processed successfully.</p>
+
+<h3>Transaction Details:</h3>
+<ul>
+    <li>Transaction ID: <strong th:text="${transactionId}"></strong></li>
+    <li>Amount: <strong th:text="${amount}"></strong></li>
+    <li>Currency: <strong th:text="${currency}"></strong></li>
+    <li>Timestamp: <strong th:text="${timestamp}"></strong></li>
+</ul>
+
+<p>Thank you for using PayGuard!</p>
+
+<hr>
+<p style="font-size: 12px; color: #666;">
+    This is an automated notification from PayGuard Payment Processing Platform.
+</p>
+</body>
+</html>
